@@ -1,0 +1,19 @@
+mixin menu-link(adres, nazwa)
+  li: a(href=adres)= nazwa
+doctype html
+html
+  include includes/head
+  body
+    .container.section-header
+      header.cf
+        ul
+         +menu-link('#', 'Strona główna')
+         +menu-link('#', 'o nas')
+         +menu-link('#', 'usługi')
+         +menu-link('#', 'Kontakt')
+      
+    
+  
+  
+  
+  script sript(src="//code.jquery.com/jquery-1.11.3.min.js")
